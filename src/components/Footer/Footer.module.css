@@ -1,0 +1,136 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 0;
+
+    background: linear-gradient(
+        to bottom,
+        #08080d 0%,
+        #0b0912 45%,
+        #110b1d 75%,
+        #190d2b 100%
+    );
+}
+
+.footer > :global(.dot-grid) {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.logo {
+  color: #f8fafc;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #a78bfa;
+}
+
+.role {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.backToTop {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: #c4b5fd;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.backToTop:hover {
+  color: #f8fafc;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding-top: 1.5rem;
+  border-top: 1px solid #272733;
+}
+
+.copyright {
+  margin: 0;
+  color: #71717a;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+
+.links a {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: #a78bfa;
+}
+
+/* Tablet y escritorio */
+@media (min-width: 768px) {
+
+  .top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backToTop,
+  .links a {
+    transition: none;
+  }
+}

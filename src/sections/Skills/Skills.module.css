@@ -1,0 +1,128 @@
+.skills {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.header {
+  max-width: 650px;
+  margin-bottom: 3rem;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: #a78bfa;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: #f8fafc;
+  font-size: clamp(2.3rem, 6vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.description {
+  margin: 1rem 0 0;
+  color: #a1a1aa;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+
+  min-width: 0;
+  padding: 1.5rem;
+
+  background: #101017;
+  border: 1px solid #272733;
+  border-radius: 12px;
+
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: #7c3aed;
+}
+
+.number {
+  color: #a78bfa;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.card h3 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.skill {
+  padding: 0.45rem 0.7rem;
+
+  color: #c4b5fd;
+  background: #211b30;
+  border: 1px solid #352849;
+  border-radius: 6px;
+
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .skills {
+    padding: 7rem 0;
+  }
+
+  .grid {
+    gap: 1.25rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}

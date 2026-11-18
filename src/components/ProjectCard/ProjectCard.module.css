@@ -1,0 +1,164 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 1.5rem;
+
+  background: #101017;
+  border: 1px solid #272733;
+  border-radius: 16px;
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card:hover {
+  border-color: #7c3aed;
+  transform: translateY(-3px);
+}
+
+.featured {
+  border-color: #45405b;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.status,
+.featuredLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status {
+  color: #a1a1aa;
+}
+
+.featuredLabel {
+  color: #a78bfa;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.description {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.4rem 0.65rem;
+
+  color: #c4b5fd;
+  background: #211b30;
+  border: 1px solid #352849;
+  border-radius: 6px;
+
+  font-size: 0.75rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+
+  margin-top: auto;
+}
+
+.links a {
+  color: #f8fafc;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #a78bfa;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #191923;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role {
+  margin: 0;
+  color: #c4b5fd;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.contributionSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contributionSection h4 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.contributionSection ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+
+  margin: 0;
+  padding-left: 1.2rem;
+
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.contributionSection li::marker {
+  color: #a78bfa;
+}
